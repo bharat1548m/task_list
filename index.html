@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Required CSS file -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>Task List</title>
+</head>
+<body style="background-color:darkslategrey;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card mt-4">
+          <div class="card-header text-center text-white bg-dark">
+            <h1>Task List</h1>
+          </div>
+          <div class="card-body" style="background-color:darkslategrey;">
+            <form id="task-form">
+              <div class="form-group">
+                <input type="text" id="input-task" class="form-control rounded-0" placeholder="Enter task here">
+              </div>
+              <div class="form-group">
+                <button type="submit" id="add-btn" class="btn btn-success rounded-0">Add Task</button>
+              </div>
+              <div class="form-group">
+                <input type="text" id="filter-task" class="form-control rounded-0" placeholder="Filter Tasks">
+              </div>
+              <div class="form-group">
+                <ul class="list-group">
+                  <!-- Dynamic List Items Go Here -->
+                </ul>
+              </div>
+              <div class="form-group">
+                <button type="button" id="clear-btn" class="btn btn-danger rounded-0">Clear Tasks</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer bg-dark">
+            <p class="card-text text-white text-center">Learning JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Required JS Files -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
